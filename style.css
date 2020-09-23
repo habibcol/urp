@@ -18,6 +18,57 @@ nav a{
     padding: 1rem 1.5rem 1rem 0rem;
     color: rgb(88, 88, 88);
 }
+#logo path:nth-child(1){
+    stroke-dasharray: 178.3013458251953;
+    stroke-dashoffset: 178.3013458251953;
+    animation: line-anim 3s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 209.7998809814453;
+    stroke-dashoffset: 209.7998809814453;
+    animation: line-anim 3s ease forwards .25s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 192.17449951171875;
+    stroke-dashoffset: 192.17449951171875;
+    animation: line-anim 2s ease forwards .5s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 152.1846466064453;
+    stroke-dashoffset: 152.1846466064453;
+    animation: line-anim 2s ease forwards .75s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 209.8003387451172;
+    stroke-dashoffset: 209.8003387451172;
+    animation: line-anim2 3s ease forwards 1s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 218.68011474609375;
+    stroke-dashoffset: 218.68011474609375;
+    animation: line-anim2 3s ease forwards 1.25s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 178.30319213867188;
+    stroke-dashoffset: 178.30319213867188;
+    animation: line-anim2 3s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line-anim2 {
+    from{
+        fill: transparent;
+    }
+    to{
+        stroke-dashoffset: 0;
+        fill: #171b50;
+    }
+}
+
 .banner{
     max-width: 100vw;
     background: rgb(241, 241, 241);
