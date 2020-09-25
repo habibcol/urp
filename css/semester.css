@@ -1,0 +1,29 @@
+.year-semester{
+    text-align: center;
+}
+.course-table{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.main-table{
+    border-collapse: collapse;
+}
+.main-table td, .main-table th{
+    padding: .3rem;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .year-semester{
+        font-size: 1rem;
+    }
+    .course-table{
+        margin: 1rem 0rem;
+    }
+    .main-table{
+        font-size: .75rem;
+    }
+}

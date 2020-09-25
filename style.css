@@ -24,40 +24,43 @@ nav a:hover{
     scale: 2;
     
 }
+
+/* ######animated logo start################## */
+
 #logo path:nth-child(1){
     stroke-dasharray: 178.3013458251953;
     stroke-dashoffset: 178.3013458251953;
-    animation: line-anim 3s ease forwards;
+    animation: line-anim 4s ease forwards;
 }
 #logo path:nth-child(2){
     stroke-dasharray: 209.7998809814453;
     stroke-dashoffset: 209.7998809814453;
-    animation: line-anim 3s ease forwards .25s;
+    animation: line-anim 4s ease forwards .25s;
 }
 #logo path:nth-child(3){
     stroke-dasharray: 192.17449951171875;
     stroke-dashoffset: 192.17449951171875;
-    animation: line-anim 2s ease forwards .5s;
+    animation: line-anim 4s ease forwards .5s;
 }
 #logo path:nth-child(4){
     stroke-dasharray: 152.1846466064453;
     stroke-dashoffset: 152.1846466064453;
-    animation: line-anim 2s ease forwards .75s;
+    animation: line-anim 4s ease forwards .75s;
 }
 #logo path:nth-child(5){
     stroke-dasharray: 209.8003387451172;
     stroke-dashoffset: 209.8003387451172;
-    animation: line-anim2 3s ease forwards 1s;
+    animation: line-anim2 4s ease forwards 1s;
 }
 #logo path:nth-child(6){
     stroke-dasharray: 218.68011474609375;
     stroke-dashoffset: 218.68011474609375;
-    animation: line-anim2 3s ease forwards 1.25s;
+    animation: line-anim2 4s ease forwards 1.25s;
 }
 #logo path:nth-child(7){
     stroke-dasharray: 178.30319213867188;
     stroke-dashoffset: 178.30319213867188;
-    animation: line-anim2 3s ease forwards 1.5s;
+    animation: line-anim2 4s ease forwards 1.5s;
 }
 
 @keyframes line-anim {
@@ -74,6 +77,9 @@ nav a:hover{
         fill: #171b50;
     }
 }
+
+/* ######animated logo finish################## */
+
 
 .banner{
     max-width: 100vw;
@@ -155,6 +161,8 @@ nav a:hover{
     justify-content: center;
 }
 
+/*################# flip cards starts############## */
+
 .card-container{ 
     margin: 5rem 0rem;
     display: flex;
@@ -206,9 +214,9 @@ figure img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(to top, #ff6e7f, #bfe9ff); */
     transform: rotateY(180deg);
 }
+
 .first-year{
     background-image: url('image/1st.jpg');
 
@@ -242,13 +250,14 @@ figure img{
     background: linear-gradient(to left, #e73870, #8d46a5);
     color: white;
 }
+/*################# flip cards end############## */
 .about{
-    height: 22rem;
+    height: 25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    overflow: auto;
+    /* overflow: auto; */
     /* background: rgb(230, 140, 140); */
 }
 .about-left img{
@@ -266,6 +275,7 @@ footer{
     justify-content: space-between;
     align-content: center;
     background:#aadbf0;
+    position: relative;
 }
 .lfooter{
     display: flex;
@@ -280,10 +290,10 @@ footer{
     font-size: 2.5rem;
     text-decoration: none;
     cursor: pointer;
-    transition: .4s ease all;
+    transition: .5s ease all;
 }
-.social i:hover{
-    color: rgb(66, 66, 66);
+.social a:hover{
+    color: #e73870;
 }
 
 /* ####################### media start ################################ */
@@ -297,11 +307,17 @@ footer{
     nav a{
         padding: 1rem .25rem;
     }
+   
+    #logo{
+        padding: 0;
+        width: 6rem;
+        height: 1rem;
+    }
     .banner{
         padding: 0rem 0rem 0rem 1rem;
     }
     .right img{
-        height: 8rem ;
+        height: 7rem ;
     }
     .left h2{
         font-size: 0.8rem;
@@ -327,8 +343,9 @@ footer{
         justify-content: space-around;
     }
     .steps .step-item{
+        padding: .2rem;
         background: #e4edff;
-        max-width: 7rem;
+        max-width: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -336,7 +353,7 @@ footer{
         border-radius: 5px;
     }
     .steps h1{
-        font-size: .8rem;
+        font-size: .5rem;
     }
     .steps p, .stp-btn{
         font-size: .5rem;
@@ -347,6 +364,29 @@ footer{
         border-radius: 3px;
         padding: 0rem .25rem;
         font-size: 0.35rem;
+    }
+    .the-form-container{
+        width: 99=5vw;
+    }
+    .card .front{
+        display: none;
+    }
+    .card .back{
+        transform: rotateY(0deg);
+    }
+    .semester-btn{
+        font-weight: bolder;
+    }
+    .about-left img{
+        height: 10rem;
+    }
+    .about-right{
+        width: 100vw;
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .year{
         width: 9rem;
@@ -375,6 +415,7 @@ footer{
         justify-content: space-between;
         align-content: center;
         background:#aadbf0;
+        position: relative;
     }
     .lfooter p{
         width: 100%;
@@ -383,6 +424,7 @@ footer{
     .rfooter{
         margin: 0rem 1rem;
     }
+  
     .social{
         display: flex;
     }

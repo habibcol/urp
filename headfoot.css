@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 0rem 5rem;
+    justify-content: baseline;
+    align-items: center;
+    /* background: rgb(255, 137, 137); */
+    
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem 1rem 0rem;
+    color: rgb(88, 88, 88);
+    transition: .5s ease all;
+}
+nav a:hover{
+    color: #ff51b7;
+    scale: 2;
+    
+}
+
+/* ######animated logo start################## */
+
+#logo path:nth-child(1){
+    stroke-dasharray: 178.3013458251953;
+    stroke-dashoffset: 178.3013458251953;
+    animation: line-anim 4s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 209.7998809814453;
+    stroke-dashoffset: 209.7998809814453;
+    animation: line-anim 4s ease forwards .25s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 192.17449951171875;
+    stroke-dashoffset: 192.17449951171875;
+    animation: line-anim 4s ease forwards .5s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 152.1846466064453;
+    stroke-dashoffset: 152.1846466064453;
+    animation: line-anim 4s ease forwards .75s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 209.8003387451172;
+    stroke-dashoffset: 209.8003387451172;
+    animation: line-anim2 4s ease forwards 1s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 218.68011474609375;
+    stroke-dashoffset: 218.68011474609375;
+    animation: line-anim2 4s ease forwards 1.25s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 178.30319213867188;
+    stroke-dashoffset: 178.30319213867188;
+    animation: line-anim2 4s ease forwards 1.5s;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line-anim2 {
+    from{
+        fill: transparent;
+    }
+    to{
+        stroke-dashoffset: 0;
+        fill: #171b50;
+    }
+}
+footer{
+    margin: 8rem 0rem 0rem 0rem;
+    padding: 0rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background:#aadbf0;
+    position: relative;
+}
+.lfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rfooter{
+    margin: 0rem 5rem;
+}
+.social a{
+    color: black;
+    font-size: 2.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.social a:hover{
+    color: #e73870;
+}
+
+
+
+@media screen and (max-width: 480px){
+    nav{
+        padding: 0rem 0.5rem;
+        font-size: .75rem;
+    }
+    nav a{
+        padding: 1rem .25rem;
+    }
+   
+    #logo{
+        padding: 0;
+        width: 6rem;
+        height: 1rem;
+    }
+    
+    footer{
+        padding: 0rem .25rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        background:#aadbf0;
+        bottom: 0;
+        position: relative;
+    }
+    .lfooter p{
+        width: 100%;
+        font-size: .75rem;
+    }
+    .rfooter{
+        margin: 0rem 1rem;
+    }
+    .rfooter h2{
+        font-size: .75rem;
+    }
+    .social{
+        display: flex;
+    }
+    .social a{
+        margin: 0rem .25rem;
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .4s ease all;
+    }
+   
+}
