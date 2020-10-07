@@ -257,8 +257,6 @@ figure img{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    /* overflow: auto; */
-    /* background: rgb(230, 140, 140); */
 }
 .about-left img{
     height: 14rem;
@@ -409,6 +407,7 @@ footer{
         padding: .25rem .1rem;
     }
     footer{
+        margin-top: 5rem;
         padding: 0rem .25rem;
         width: 100%;
         display: flex;
